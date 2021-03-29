@@ -50,3 +50,22 @@ NB: you will need to set the 'JanusPath' in compileToJanus.py to where you clone
 
 run the final tool on target binary 
 $ ./janus/jdsl_run <target_binary>
+
+Section 4: Cinnamon Pin Implementation: 
+
+You can get the relevant files for Pin  with placeholders, templates and utility libraries for Cinnamon from https://github.com/mahwisharif/pin-cinnamon
+
+Copy MyDSLTool folder from pin-cinnamon under path-to-your-pin-root-dir/source/tools
+
+in compileToPin.py, set PinPATH=your-pin-root-dir/source/tools/MyDSLTool
+
+Once the code for Pin has been generated and integrated by running compileToPin.py script in Section 2, you can build the final tool using the following commands:
+
+$ cd your-pin-root-dir/source/tools/MyDSLTool
+$ make obj-intel64/MyDSLTool.so
+
+run the tool using the following command 
+
+$ your-pin-root-dir/pin -t obj-intel64/MyDSLTool.so -- <target_binary>
+
+

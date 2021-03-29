@@ -1,5 +1,6 @@
 *.o
 bdc
+temp.cpp
 lexer.cpp
 lexer.h
 parser.cpp
@@ -13,4 +14,9 @@ tests/*.funch
 tests/*.globalh
 tests/*.init
 tests/*.exit
+tests/*.bbl
+tests/*.img
+tests/*.ins
+tests/*.rtn
+tests/*.ptype
 tests/temp.cpp
