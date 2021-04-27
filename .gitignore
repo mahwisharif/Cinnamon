@@ -19,4 +19,9 @@ tests/*.img
 tests/*.ins
 tests/*.rtn
 tests/*.ptype
+tests/*.instr
+tests/*.loader
+tests/*.temp
+tests/*.ptype
+tests/*.ptype
 tests/temp.cpp
